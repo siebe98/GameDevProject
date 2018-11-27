@@ -45,7 +45,8 @@ namespace TestGame
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            _playertexture =   Content.Load<Texture2D>("RunRight");
+            _playertexture =   Content.Load<Texture2D>("FullSprite");
+            
             //Vector2 playerPosition = new Vector2(GraphicsDevice.Viewport.TitleSafeArea.X, GraphicsDevice.Viewport.TitleSafeArea.Y + GraphicsDevice.Viewport.TitleSafeArea.Height / 2);
             _player = new Player(_playertexture, new Vector2(200,200));
             _player._controls = new BedieningPijltjes();
